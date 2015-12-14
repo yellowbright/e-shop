@@ -5,7 +5,15 @@ namespace Home\Controller;
 use Think\Controller;
 class AdminController extends Controller{
 	public function lst(){
-
+		$model = D('Admin');
+		$data = $model -> search();
+		$this -> assign(
+			array(
+				'data' => $data['data'],
+				'page'=>$data['page']
+				)
+			);
+		$this -> display();
 	}
 	public function add(){
 		if(IS_POST){
@@ -19,7 +27,7 @@ class AdminController extends Controller{
 				else{
 					// $sql=$model->getLstSql();
 					$sql=$model->getLastSql();
-					$this->error('添加数据失败!  <br/>'.$sql)
+					$this->error('添加数据失败!  <br/>'.$sql);
 				}
 			}else{
 				$error=$model->getError();
@@ -31,10 +39,26 @@ class AdminController extends Controller{
 	public function save(){
 
 	}
-	public function del(){
-
+	public function del($id){
+		$model = M('admin');
+		if($id > 1)
+			$model -> delete($id);
+		$this -> success('删除成功',U('lst'));
 	}
 	public function bdel(){
-
+		$delid = (array)I('post.delid');
+		if($delid){	
+		$delid= array_unique($delid);
+		$key = array_search(1, $delid);
+		if($key !== FALSE)
+			unset($delid[$key]);
+		if($delid){
+			$delid =implode(',',$delid);
+			$model = M('admin');
+			$model -> delete($delid);
+			}	
+		}
+	$this -> success('批量删除成功',U('lst'));
+	exit;
 	}
 }
