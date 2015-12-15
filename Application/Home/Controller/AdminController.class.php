@@ -2,8 +2,7 @@
 // namespace Home/Controller;
 // use Think/Controller;
 namespace Home\Controller;
-use Think\Controller;
-class AdminController extends Controller{
+class AdminController extends IndexController{
 	public function lst(){
 		$model = D('Admin');
 		$data = $model -> search();
@@ -20,7 +19,7 @@ class AdminController extends Controller{
 			$model=D('Admin');
 			if($model->create()){
 				if($model->add()){
-					$this->success('添加数据陈功',U('lst'));
+					$this->success('添加数据成功',U('lst'));
 					// 注意添加exit
 					exit;
 				}
@@ -36,11 +35,35 @@ class AdminController extends Controller{
 		}
 		$this->display();
 	}
-	public function save(){
-
+	public function save($id){
+		$model=D('Admin');
+		if(IS_POST){
+			if($model->create()){
+				if($model->save()!==FALSE){
+					$this->success('修改数据成功',U('lst'));
+					// 注意添加exit
+					exit;
+				}
+				else{
+					// $sql=$model->getLstSql();
+					$sql=$model->getLastSql();
+					$this->error('修改数据失败!  <br/>'.$sql);
+				}
+			}else{
+				$error=$model->getError();
+				$this->error($error);
+			}
+		}
+		$data  = $model -> find($id);
+		$this -> assign('data', $data);
+		$this->display();
 	}
 	public function del($id){
 		$model = M('admin');
+		if (!$model->autoCheckToken($_POST)){
+ // 令牌验证错误
+			$this->error('令牌验证错误');
+ }
 		if($id > 1)
 			$model -> delete($id);
 		$this -> success('删除成功',U('lst'));
@@ -55,6 +78,10 @@ class AdminController extends Controller{
 		if($delid){
 			$delid =implode(',',$delid);
 			$model = M('admin');
+			if (!$model->autoCheckToken($_POST)){
+ // 令牌验证错误
+				$this->error('令牌验证错误');
+ }
 			$model -> delete($delid);
 			}	
 		}

@@ -15,7 +15,7 @@
     <div style="clear:both"></div>
 </h1>
 <div class="form-div">
-    <form action="/Home/Admin/lst.html" name="searchForm">
+    <form action="/index.php/Home/Admin/lst/p/1.html" name="searchForm">
     <img src="/Public/Images/icon_search.gif" width="26" height="22" border="0" alt="search" />
     名称: <input type="text" name="un" size="15" value="<?php echo I('get.un'); ?>" />
     id: <input type="text" name="id" size="15" value="<?php echo I('get.id'); ?>" />
