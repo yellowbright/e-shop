@@ -4,13 +4,28 @@ use Think\Model;
 class AdminModel extends Model{
 	// public function $_valicate(){
 	protected $_validate=array(
-		array('username','require','账号不能为空',1),
-		array('password','require','密码不能为空',1),
-		array('password','','密码不能重复',1,'unique'),
-		array('rpassword','password','两次密码必须一致',0,'confirm')
+		//任何时候
+		array('username','require','账号不能为空',1),	
+		//登录时,修改时,也就是说第4个参数为0可以变为1用两个6参数替换	
+		array('rpassword','password','两次密码必须一致',0,'confirm'),
+		//登录时判断
+		array('password','require','密码不能为空',1,'regex',4),
+		array('captcha', 'require', '验证码不能为空！', 1, 'regex', 4),
+		array('captcha','chkCode','验证码不正确',1,'callback',4),
+		//添加时判段
+		array('username','','账号不能重复',1,'unique',1),
+		array('password','require','密码不能为空',1,'regex',1),
+		//修改时判断
+		array('username','','账号不能重复',1,'unique',2)
 	//注意标点;	
 	);
 	protected function _before_insert(&$data,$option){
+		$data['password']=md5($data['password']);
+	}
+	protected function _before_update(&$data,$option){
+		if(!$data['password'])
+			unset($data['password']);
+		else
 		$data['password']=md5($data['password']);
 	}
 	public function search(){
@@ -31,5 +46,27 @@ class AdminModel extends Model{
 			'page'=>$show,
 			'data' => $list
 			);
+	}
+	public function login(){
+		$password = $this->password;
+		$user = $this->where("username = '{$this->username}'")->find();
+		if($user){
+			if($this->password==md5($password)){
+				session('id',$user['id']);
+				session('username',$user['username']);
+				return TRUE;
+			}
+			else
+				return -2;
+		}
+		else 
+			return -1;
+	}
+	public function logout(){
+		session(NULL);
+	}
+	protected function chkCode($code){
+    		$verify = new \Think\Verify();
+    		return $verify->check($code);
 	}
 }
