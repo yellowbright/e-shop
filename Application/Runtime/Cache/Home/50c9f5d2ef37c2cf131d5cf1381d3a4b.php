@@ -7,7 +7,7 @@
 <link href="/Public/Styles/main.css" rel="stylesheet" type="text/css" />
 </head>
 <body style="background: #278296;color:white">
-<form method="post" action="/Home/Login/login" >
+<form method="post" action="/index.php/Home/Login/login.html" >
     <table cellspacing="0" cellpadding="0" style="margin-top:100px" align="center">
         <tr>
             <td>

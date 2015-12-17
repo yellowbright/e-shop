@@ -18,7 +18,6 @@ if(version_compare(PHP_VERSION,'5.3.0','<'))  die('require PHP > 5.3.0 !');
 define('APP_DEBUG',true);
 
 define('IMG_URL', 'http://www.yellow.com/Uploads/');
-
 // 定义应用目录
 define('APP_PATH','./Application/');
 

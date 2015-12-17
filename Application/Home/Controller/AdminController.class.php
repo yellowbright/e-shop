@@ -60,10 +60,6 @@ class AdminController extends IndexController{
 	}
 	public function del($id){
 		$model = M('admin');
-		if (!$model->autoCheckToken($_POST)){
- // 令牌验证错误
-			$this->error('令牌验证错误');
- }
 		if($id > 1)
 			$model -> delete($id);
 		$this -> success('删除成功',U('lst'));
