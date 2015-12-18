@@ -1,0 +1,39 @@
+[ 2015-12-18T16:42:33+08:00 ] 127.0.0.1 /index.php/Home/Index/Js/global.js
+ERR: 非法操作:Js
+
+[ 2015-12-18T16:42:33+08:00 ] 127.0.0.1 /index.php/Home/Index/Js/utils.js
+ERR: 非法操作:Js
+
+[ 2015-12-18T16:42:33+08:00 ] 127.0.0.1 /index.php/Home/Index/Js/transport.js
+ERR: 非法操作:Js
+
+[ 2015-12-18T18:27:38+08:00 ] 127.0.0.1 /index.php/Goods/Goods/lst
+ERR: Think\Model:search方法不存在！
+
+[ 2015-12-18T21:52:44+08:00 ] 127.0.0.1 /index.php/Home/Index/Js/global.js
+ERR: 非法操作:Js
+
+[ 2015-12-18T21:52:44+08:00 ] 127.0.0.1 /index.php/Home/Index/Js/utils.js
+ERR: 非法操作:Js
+
+[ 2015-12-18T21:52:44+08:00 ] 127.0.0.1 /index.php/Home/Index/Js/transport.js
+ERR: 非法操作:Js
+
+[ 2015-12-18T21:58:30+08:00 ] 127.0.0.1 /index.php/Home/Index/Js/utils.js
+ERR: 非法操作:Js
+
+[ 2015-12-18T21:58:30+08:00 ] 127.0.0.1 /index.php/Home/Index/Js/transport.js
+ERR: 非法操作:Js
+
+[ 2015-12-18T21:58:30+08:00 ] 127.0.0.1 /index.php/Home/Index/Js/global.js
+ERR: 非法操作:Js
+
+[ 2015-12-18T22:14:30+08:00 ] 127.0.0.1 /index.php/Home/Index/Js/transport.js
+ERR: 非法操作:Js
+
+[ 2015-12-18T22:14:30+08:00 ] 127.0.0.1 /index.php/Home/Index/Js/utils.js
+ERR: 非法操作:Js
+
+[ 2015-12-18T22:14:30+08:00 ] 127.0.0.1 /index.php/Home/Index/Js/global.js
+ERR: 非法操作:Js
+
