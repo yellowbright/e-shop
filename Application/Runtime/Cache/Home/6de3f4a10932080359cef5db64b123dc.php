@@ -6,6 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="/Public/Styles/general.css" rel="stylesheet" type="text/css" />
 <link href="/Public/Styles/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/Public/Js/jquery-1.4.2.min.js"></script>
 </head>
 <body>
 <h1>
@@ -15,7 +16,7 @@
     <div style="clear:both"></div>
 </h1>
 <div class="form-div">
-    <form action="/index.php/Home/Admin/lst.html" name="searchForm">
+    <form action="/index.php/Home/Admin/lst" name="searchForm">
     <img src="/Public/Images/icon_search.gif" width="26" height="22" border="0" alt="search" />
     名称: <input type="text" name="un" size="15" value="<?php echo I('get.un'); ?>" />
     id: <input type="text" name="id" size="15" value="<?php echo I('get.id'); ?>" />
@@ -64,3 +65,11 @@
 版权所有 &copy; 2005-2012 上海商派网络科技有限公司，并保留所有权利。</div>
 </body>
 </html>
+<script>
+    $("#selall").click(function(){
+        if($(this).attr("checked"))
+            $("input[name='delid[]']").attr("checked","checked")
+        else
+            $("input[name='delid[]']").removeAttr("checked")
+    });
+</script>
