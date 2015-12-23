@@ -120,21 +120,24 @@ body {
         <span class="tab-front" id="menu-tab">菜单</span>
     </p>
 </div>
-<?php $priData = session('privilege'); ?>
 <div id="main-div">
     <div id="menu-list">
         <ul id="menu-ul">
-        	<?php  foreach ($priData as $k => $v): if($v['pri_level'] > 0) continue ; ?>
-            <li class="explode" name="menu">
-            <?php echo $v['pri_name']; ?>
+            <li class="explode" key="02_cat_and_goods" name="menu">
+            管理员管理
                 <ul>
-                	<?php
- foreach ($priData as $k1 => $v1): if($v1['parent_id'] != $v['id']) continue ; ?>
-                    <li class="menu-item"><a href="<?php echo U($v1['module_name'].'/'.$v1['controller_name'].'/'.$v1['action_name']); ?>" target="main-frame"><?php echo $v1['pri_name']; ?></a></li>
-                    <?php endforeach; ?>
+                    <li class="menu-item"><a href="/index.php/Home/Privilege/lst" target="main-frame">权限列表</a></li>
+                    <li class="menu-item"><a href="/index.php/Home/Role/lst" target="main-frame">角色列表</a></li>
+                    <li class="menu-item"><a href="/index.php/Home/Admin/lst" target="main-frame">管理员列表</a></li>
                 </ul>
             </li>
-			<?php endforeach; ?>
+            <li class="explode" key="08_members" name="menu">
+            系统模块
+                <ul>
+                    <li class="menu-item"><a href="/index.php/Gii/Index/index" target="main-frame">代码生成器</a></li>
+                  </li>
+                </ul>
+            </li>
         </ul>
     </div>
     <div id="help-div" style="display:none">
@@ -165,7 +168,7 @@ body {
             }
         }
         collapse = !collapse;
-        document.getElementById('toggleImg').src = collapse ? './Images/menu_minus.gif' : './Images/menu_plus.gif';
+        document.getElementById('toggleImg').src = collapse ? '/Public/Images/menu_minus.gif' : '/Public/Images/menu_plus.gif';
         document.getElementById('toggleImg').alt = collapse ? collapse_all : expand_all;
     }
 
@@ -285,7 +288,7 @@ body {
                         }
                     }
                 }
-                document.getElementById('toggleImg').src = collapse ? './Images/menu_minus.gif' : './Images/menu_plus.gif';
+                document.getElementById('toggleImg').src = collapse ? '/Public/Images/menu_minus.gif' : '/Public/Images/menu_plus.gif';
                 document.getElementById('toggleImg').alt = collapse ? collapse_all : expand_all;
             }
         }

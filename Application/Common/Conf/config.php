@@ -1,7 +1,7 @@
 <?php
 return array(
 	//track
-	'SHOW_PAGE_TRACE' =>true,
+	// 'SHOW_PAGE_TRACE' =>true,
 	//'配置项'=>'配置值'
 	'DB_TYPE'               =>  'MYSQL',
 	'DB_HOST'               =>  '127.0.0.1', // 服务器地址

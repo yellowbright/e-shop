@@ -1,0 +1,408 @@
+[ 2015-12-21T11:13:25+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000707s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000763s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026076s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026131s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001194s ]
+
+[ 2015-12-21T11:13:28+08:00 ] 127.0.0.1 /index.php/Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000803s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000886s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007181s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007245s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000688s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001234s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000738s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000804s ]
+
+[ 2015-12-21T11:13:28+08:00 ] 127.0.0.1 /index.php/Home/Login/chkImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000842s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000902s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001408s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001532s ]
+
+[ 2015-12-21T11:13:38+08:00 ] 127.0.0.1 /index.php/Home/Login/chkImg/0.8805224136449397
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000673s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000727s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000694s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000753s ]
+
+[ 2015-12-21T11:13:42+08:00 ] 127.0.0.1 /index.php/Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000726s ]
+SQL: SHOW COLUMNS FROM `yellow28_admin` [ RunTime:0.003061s ]
+SQL: SELECT * FROM `yellow28_admin` WHERE ( username = 'admin' ) LIMIT 1   [ RunTime:0.000229s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005860s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005916s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000603s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001129s ]
+
+[ 2015-12-21T11:13:43+08:00 ] 127.0.0.1 /index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000631s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000685s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019092s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019145s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000594s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001116s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000662s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000711s ]
+
+[ 2015-12-21T11:13:43+08:00 ] 127.0.0.1 /index.php/Home/Index/top
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000745s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000805s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025650s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025707s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000688s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001226s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000688s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000739s ]
+
+[ 2015-12-21T11:13:43+08:00 ] 127.0.0.1 /index.php/Home/Index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000763s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000836s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020337s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020411s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000507s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000869s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001472s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000728s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000780s ]
+
+[ 2015-12-21T11:13:43+08:00 ] 127.0.0.1 /index.php/Home/Index/menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000973s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001159s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007517s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007599s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000993s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001672s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000883s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000944s ]
+
+[ 2015-12-21T11:13:44+08:00 ] 127.0.0.1 /index.php/Home/Index/Js/global.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000811s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000871s ]
+ERR: 非法操作:Js
+
+[ 2015-12-21T11:13:44+08:00 ] 127.0.0.1 /index.php/Home/Index/Js/transport.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000758s ]
+ERR: 非法操作:Js
+
+[ 2015-12-21T11:13:44+08:00 ] 127.0.0.1 /index.php/Home/Index/Js/utils.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000767s ]
+ERR: 非法操作:Js
+
+[ 2015-12-21T11:13:46+08:00 ] 127.0.0.1 /index.php/Home/Privilege/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000716s ]
+SQL: SHOW COLUMNS FROM `yellow28_privilege` [ RunTime:0.003033s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\Users\yellow\e-shop\ThinkPHP\Library\Think\Db.class.php 第 429 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `yellow28_privilege` LIMIT 1   [ RunTime:0.000164s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\Users\yellow\e-shop\ThinkPHP\Library\Think\Db.class.php 第 429 行.
+SQL: SELECT * FROM `yellow28_privilege` LIMIT 0,4   [ RunTime:0.000194s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+
+[ 2015-12-21T11:15:10+08:00 ] 127.0.0.1 /index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000751s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005364s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005421s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000686s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001286s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000693s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000744s ]
+
+[ 2015-12-21T11:15:10+08:00 ] 127.0.0.1 /index.php/Home/Index/top
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000890s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000950s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006954s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007021s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000697s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001249s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000688s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000737s ]
+
+[ 2015-12-21T11:15:10+08:00 ] 127.0.0.1 /index.php/Home/Index/menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000768s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007489s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007556s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000497s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000949s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001531s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000970s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001051s ]
+
+[ 2015-12-21T11:15:10+08:00 ] 127.0.0.1 /index.php/Home/Index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000930s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007229s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007300s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000608s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000858s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001564s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000754s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000809s ]
+
+[ 2015-12-21T11:15:10+08:00 ] 127.0.0.1 /index.php/Home/Index/Js/global.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000774s ]
+ERR: 非法操作:Js
+
+[ 2015-12-21T11:15:10+08:00 ] 127.0.0.1 /index.php/Home/Index/Js/utils.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000759s ]
+ERR: 非法操作:Js
+
+[ 2015-12-21T11:15:10+08:00 ] 127.0.0.1 /index.php/Home/Index/Js/transport.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000766s ]
+ERR: 非法操作:Js
+
+[ 2015-12-21T11:15:13+08:00 ] 127.0.0.1 /index.php/Home/Privilege/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000726s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000783s ]
+SQL: SHOW COLUMNS FROM `yellow28_privilege` [ RunTime:0.002581s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\Users\yellow\e-shop\ThinkPHP\Library\Think\Db.class.php 第 429 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `yellow28_privilege` LIMIT 1   [ RunTime:0.000166s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\Users\yellow\e-shop\ThinkPHP\Library\Think\Db.class.php 第 429 行.
+SQL: SELECT * FROM `yellow28_privilege` LIMIT 0,4   [ RunTime:0.000184s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+
+[ 2015-12-21T11:15:14+08:00 ] 127.0.0.1 /index.php/Home/Role/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000545s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001119s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001212s ]
+
+[ 2015-12-21T11:15:19+08:00 ] 127.0.0.1 /index.php/Home/Admin/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000786s ]
+SQL: SHOW COLUMNS FROM `yellow28_admin` [ RunTime:0.003124s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\Users\yellow\e-shop\ThinkPHP\Library\Think\Db.class.php 第 429 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `yellow28_admin` LIMIT 1   [ RunTime:0.000218s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\Users\yellow\e-shop\ThinkPHP\Library\Think\Db.class.php 第 429 行.
+SQL: SELECT * FROM `yellow28_admin` LIMIT 0,4   [ RunTime:0.000276s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007559s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007628s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000536s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000871s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001498s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000806s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000861s ]
+
+[ 2015-12-21T11:15:21+08:00 ] 127.0.0.1 /index.php/Home/Role/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000611s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001116s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001221s ]
+
+[ 2015-12-21T11:15:22+08:00 ] 127.0.0.1 /index.php/Gii/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000547s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001109s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001212s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000204s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015236s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015325s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001040s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001857s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001274s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001377s ]
+
+[ 2015-12-21T11:15:24+08:00 ] 127.0.0.1 /index.php/Home/Role/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000636s ]
+
