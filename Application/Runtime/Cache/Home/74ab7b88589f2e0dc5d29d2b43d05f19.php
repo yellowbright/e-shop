@@ -10,19 +10,23 @@
 </head>
 <body>
 <h1>
-    <span class="action-span"><a href="/index.php/Home/Role/add">添加</a></span>
+    <span class="action-span"><a href="/index.php/Home/Privilege/add">添加</a></span>
     <span class="action-span1"><a href="#">ECSHOP 管理中心</a></span>
     <span id="search_id" class="action-span1"> - 列表 </span>
     <div style="clear:both"></div>
 </h1>
-<form method="post" action="/index.php/Home/Role/bdel" onclick="return confilm('确认要删除么?');" name="listForm">
+<form method="post" action="/index.php/Home/Privilege/bdel" onclick="return confilm('确认要删除么?');" name="listForm">
     <div class="list-div" id="listDiv">
         <table cellpadding="3" cellspacing="1">
             <tr>
                 <th width="30"><input id="selall" type="checkbox" /></th>
                                 <th>id</th>
-                            <th>角色名称</th>
-                            <th>权限的ID，如果有多个权限就用,隔开，如1,3,4</th>
+                            <th>权限名称</th>
+                            <th>对应的模块名</th>
+                            <th>对应的控制器名</th>
+                            <th>对应的方法名</th>
+                             <th>上级权限的id</th>
+                            <th>权限的级别。0：一级 1：二级</th>
                             <th>操作</th>
             </tr>
            <?php foreach($data as $k => $v): ?>          <tr class="ontr">
@@ -30,17 +34,21 @@
                 <input name="delid[]" type="checkbox" value="<?php echo $v['id']; ?>" />
                 </td>       
                                 <td align="center"><?php echo $v['id']; ?></td>
-                                <td align="center"><?php echo $v['role_name']; ?></td>
-                                <td align="center"><?php echo $v['pri_id']; ?></td>
+                                <td align="center"><?php echo str_repeat('-', $v['pri_level']*4).$v['pri_name']; ?></td>
+                                <td align="center"><?php echo $v['module_name']; ?></td>
+                                <td align="center"><?php echo $v['controller_name']; ?></td>
+                                <td align="center"><?php echo $v['action_name']; ?></td>
+                                <td align="center"><?php echo $v['parent_id']; ?></td>
+                                <td align="center"><?php echo $v['pri_level']; ?></td>
                                 <td align="center">
-                <a href="/index.php/Home/Role/save/id/<?php echo $v['id']; ?>" title="编辑">编辑</a>
-                 <a onclick="return confirm('确认要删除么?');" href="/index.php/Home/Role/del/id/<?php echo $v['id']; ?>" title="编辑">移除</a> 
+                <a href="/index.php/Home/Privilege/save/id/<?php echo $v['id']; ?>" title="编辑">编辑</a>
+                 <a onclick="return confirm('确认要删除么?');" href="/index.php/Home/Privilege/del/id/<?php echo $v['id']; ?>" title="编辑">移除</a> 
                 </td>
             </tr>
             <?php endforeach; ?>            <tr>
                 <td><input type="submit" value="删除所选" /></td>
-                <td align="right" nowrap="true" colspan="4">
-                <?php echo $page;?>                </td>
+                <td align="right" nowrap="true" colspan="8">
+                           </td>
             </tr> 
         </table>
     </div>
@@ -53,10 +61,12 @@
 </body>
 </html>
 <script>
-$("#selall").click(function(){
-    if($(this).attr("checked"))
-        $("input[name='delid[]']").attr("checked", "checked");
-    else
-        $("input[name='delid[]']").removeAttr("checked");
-});
+    $("#selall").click(function(){
+        if($(this).attr("checked"))
+            $("input[name='delid[]']").attr("checked","checked")
+        else
+            $("input[name='delid[]']").removeAttr("checked")
+    }
+
+        );
 </script>

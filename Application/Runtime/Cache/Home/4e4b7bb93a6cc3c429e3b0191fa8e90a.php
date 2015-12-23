@@ -15,7 +15,7 @@
     <div style="clear:both"></div>
 </h1>
 <div class="main-div">
-    <form method="post" action="/index.php/Home/Role/save/id/1" >
+    <form method="post" action="/index.php/Home/Role/save/id/3" >
     <input type="hidden" name="id" value="<?php echo I('get.id'); ?>" />
         <table cellspacing="1" cellpadding="3" width="100%">
                     <tr>
