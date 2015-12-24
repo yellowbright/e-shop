@@ -74,7 +74,7 @@ class PrivilegeModel extends Model{
 	private function _updateChildPriLevel($priData,$parent_id,$pri_level){
 		foreach($priData as $v){
 			if($v['parent_id']==$parent_id){
-				$this->execute("UPDATE yellow28_privilege SET pri_level=({$pri_level}+1) WHERE id={$v['id']}");
+				$this->execute("UPDATE yellow28_privilege SET pri_level=($pri_level+1) WHERE id={$v['id']}");
 				// $this->execute('UPDATE php28_privilege SET pri_level ='.($parent_level+1).' WHERE id='.$v['id']);
 				 // var_dump($this->getLastSql());die;
 				$this->_updateChildPriLevel($priData, $v['id'], $pri_level+1);

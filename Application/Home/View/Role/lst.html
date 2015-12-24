@@ -40,7 +40,7 @@
             <?php endforeach; ?>            <tr>
                 <td><input type="submit" value="删除所选" /></td>
                 <td align="right" nowrap="true" colspan="4">
-                <?php echo $page;?>                </td>
+                               </td>
             </tr> 
         </table>
     </div>
@@ -53,10 +53,12 @@
 </body>
 </html>
 <script>
-$("#selall").click(function(){
-    if($(this).attr("checked"))
-        $("input[name='delid[]']").attr("checked", "checked");
-    else
-        $("input[name='delid[]']").removeAttr("checked");
-});
+    $("#selall").click(function(){
+        if($(this).attr("checked"))
+            $("input[name='delid[]']").attr("checked","checked")
+        else
+            $("input[name='delid[]']").removeAttr("checked")
+    }
+
+        );
 </script>
