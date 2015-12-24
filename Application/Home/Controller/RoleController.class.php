@@ -5,14 +5,9 @@
 namespace Home\Controller;
 class RoleController extends \Home\Controller\IndexController{
 	public function lst(){
-		$model = D('Role');
-		$data = $model -> search();
-		$this -> assign(
-			array(
-				'data' => $data['data'],
-				'page'=>$data['page']
-				)
-			);
+		$model = M('Role');
+		$data = $model -> select();
+		$this -> assign('data',$data);
 		$this -> display();
 	}
 	public function add(){
@@ -34,6 +29,9 @@ class RoleController extends \Home\Controller\IndexController{
 				$this->error($error);
 			}
 		}
+		$privilegeModel=D('Privilege');
+		$priData=$privilegeModel->getPriTree();
+		$this->assign('priData',$priData);
 		$this->display();
 	}
 	public function save($id){
@@ -55,6 +53,9 @@ class RoleController extends \Home\Controller\IndexController{
 				$this->error($error);
 			}
 		}
+		$privilegeModel=D('Privilege');
+		$priData=$privilegeModel->getPriTree();
+		$this->assign('priData',$priData);
 		$data  = $model -> find($id);
 		$this -> assign('data', $data);
 		$this->display();

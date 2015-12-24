@@ -34,7 +34,7 @@
                 <input name="delid[]" type="checkbox" value="<?php echo $v['id']; ?>" />
                 </td>       
                                 <td align="center"><?php echo $v['id']; ?></td>
-                                <td align="center"><?php echo str_repeat('-', $v['pri_level']*4).$v['pri_name']; ?></td>
+                                <td><?php echo str_repeat('-', $v['pri_level']*4).$v['pri_name']; ?></td>
                                 <td align="center"><?php echo $v['module_name']; ?></td>
                                 <td align="center"><?php echo $v['controller_name']; ?></td>
                                 <td align="center"><?php echo $v['action_name']; ?></td>

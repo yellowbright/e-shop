@@ -27,7 +27,10 @@
                         <tr>
                 <td class="label">权限的ID，如果有多个权限就用,隔开，如1,3,4</td>
                 <td>
-                    <input type="text" name="pri_id" maxlength="60" value="" />
+                <?php foreach($priData as $v):?>
+                    <input type="checkbox" name="pri_id[]" value="<?php echo $v['id'];?>" /><?php echo str_repeat('-', $v['pri_level']*4).$v['pri_name'];?><br/>
+                <?php endforeach;?>
+                                         <span class="require-field">*</span>
                                     </td>
             </tr>
                         <tr>
