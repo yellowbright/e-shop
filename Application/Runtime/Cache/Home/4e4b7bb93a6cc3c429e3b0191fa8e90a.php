@@ -6,6 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="/Public/Styles/general.css" rel="stylesheet" type="text/css" />
 <link href="/Public/Styles/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/Public/Js/jquery-1.4.2.min.js"></script>
 </head>
 <body>
 <h1>
@@ -15,13 +16,13 @@
     <div style="clear:both"></div>
 </h1>
 <div class="main-div">
-    <form method="post" action="/index.php/Home/Role/save/id/3" >
+    <form method="post" action="/index.php/Home/Role/save/id/5" >
     <input type="hidden" name="id" value="<?php echo I('get.id'); ?>" />
         <table cellspacing="1" cellpadding="3" width="100%">
                     <tr>
                 <td class="label">角色名称</td>
                 <td>
-                    <input type="text" name="role_name" maxlength="60" value="<?php echo $data['role_name']; ?>" />
+                    <input level="<?php echo $v['pri_level']; ?>" type="text" name="role_name" maxlength="60" value="<?php echo $data['role_name']; ?>" />
                                         <span class="require-field">*</span>
                                 </td>
             </tr>
@@ -29,7 +30,7 @@
                 <td class="label">权限的ID，如果有多个权限就用,隔开，如1,3,4</td>
                 <td>
                 <?php foreach($priData as $v): if(strpos(','.$data['pri_id'].',',$v['id'])!==FAlSE) $check='checked=checked'; else $check=''; ?>
-                    <input <?php echo $check;?> type="checkbox" name="pri_id[]" value="<?php echo $v['id'];?>" /><?php echo str_repeat('-', $v['pri_level']*4).$v['pri_name'];?><br/>
+                    <input level="<?php echo $v['pri_level']; ?>" <?php echo $check;?> type="checkbox" name="pri_id[]" value="<?php echo $v['id'];?>" /><?php echo str_repeat('-', $v['pri_level']*4).$v['pri_name'];?><br/>
                 <?php endforeach;?>
                                          <span class="require-field">*</span>
                                     </td>

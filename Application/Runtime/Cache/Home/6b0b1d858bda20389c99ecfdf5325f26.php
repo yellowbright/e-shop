@@ -31,7 +31,7 @@
                 </td>       
                                 <td align="center"><?php echo $v['id']; ?></td>
                                 <td align="center"><?php echo $v['role_name']; ?></td>
-                                <td align="center"><?php echo $v['pri_id']; ?></td>
+                                <td align="center"><?php echo $v['pn']; ?></td>
                                 <td align="center">
                 <a href="/index.php/Home/Role/save/id/<?php echo $v['id']; ?>" title="编辑">编辑</a>
                  <a onclick="return confirm('确认要删除么?');" href="/index.php/Home/Role/del/id/<?php echo $v['id']; ?>" title="编辑">移除</a> 
@@ -40,7 +40,7 @@
             <?php endforeach; ?>            <tr>
                 <td><input type="submit" value="删除所选" /></td>
                 <td align="right" nowrap="true" colspan="4">
-                               </td>
+                       <?php echo $page; ?>         </td>
             </tr> 
         </table>
     </div>

@@ -4,11 +4,15 @@
 // use Think/Controller;
 namespace Home\Controller;
 class RoleController extends \Home\Controller\IndexController{
-	public function lst(){
-		$model = M('Role');
-		$data = $model -> select();
-		$this -> assign('data',$data);
-		$this -> display();
+	public function lst()
+	{
+		$model = D('Role');
+		$data = $model->search();
+		$this->assign(array(
+			'data' => $data['data'],
+			'page' => $data['pageStr'],
+		));
+		$this->display();
 	}
 	public function add(){
 		if(IS_POST){
@@ -30,8 +34,8 @@ class RoleController extends \Home\Controller\IndexController{
 			}
 		}
 		$privilegeModel=D('Privilege');
-		$priData=$privilegeModel->getPriTree();
-		$this->assign('priData',$priData);
+		$data=$privilegeModel->getPriTree();
+		$this->assign('data',$data);
 		$this->display();
 	}
 	public function save($id){

@@ -6,6 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="__PUBLIC__/Styles/general.css" rel="stylesheet" type="text/css" />
 <link href="__PUBLIC__/Styles/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="__PUBLIC__/Js/jquery-1.4.2.min.js"></script>
 </head>
 <body>
 <h1>
@@ -34,7 +35,7 @@
                         else
                             $check='';
                 ?>
-                    <input <?php echo $check;?> type="checkbox" name="pri_id[]" value="<?php echo $v['id'];?>" /><?php echo str_repeat('-', $v['pri_level']*4).$v['pri_name'];?><br/>
+                    <input level="<?php echo $v['pri_level']; ?>" <?php echo $check;?> type="checkbox" name="pri_id[]" value="<?php echo $v['id'];?>" /><?php echo str_repeat('-', $v['pri_level']*4).$v['pri_name'];?><br/>
                 <?php endforeach;?>
                                          <span class="require-field">*</span>
                                     </td>

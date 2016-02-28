@@ -33,6 +33,9 @@ class AdminController extends IndexController{
 				$this->error($error);
 			}
 		}
+		$roleModel = M('Role');
+		$roleData = $roleModel->select();
+		$this->assign('roleData', $roleData);
 		$this->display();
 	}
 	public function save($id){
