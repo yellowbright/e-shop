@@ -1,10 +1,11 @@
+<?php
 
 // namespace Home/Controller;
 // use Think/Controller;
-namespace <?php echo $mn; ?>\Controller;
-class <?php echo $tpName;?>Controller extends \Home\Controller\IndexController{
+namespace Goods\Controller;
+class BrandController extends \Home\Controller\IndexController{
 	public function lst(){
-		$model = D('<?php echo $tpName;?>');
+		$model = D('Brand');
 		$data = $model -> search();
 		$this -> assign(
 			array(
@@ -16,7 +17,7 @@ class <?php echo $tpName;?>Controller extends \Home\Controller\IndexController{
 	}
 	public function add(){
 		if(IS_POST){
-			$model=D('<?php echo $tpName;?>');
+			$model=D('Brand');
 			if($model->create()){
 				if($model->add()){
 					$this->success('添加数据成功',U('lst'));
@@ -36,7 +37,7 @@ class <?php echo $tpName;?>Controller extends \Home\Controller\IndexController{
 		$this->display();
 	}
 	public function save($id){
-		$model=D('<?php echo $tpName;?>');
+		$model=D('Brand');
 		if(IS_POST){
 			if($model->create()){
 				if($model->save()!==FALSE){
@@ -59,15 +60,15 @@ class <?php echo $tpName;?>Controller extends \Home\Controller\IndexController{
 		$this->display();
 	}
 	public function del($id){
-		$model = D('<?php echo $tpName;?>');
-			$model -> delete($id);
+		$model = D('Brand');
+			$model ->delete($id);
 		$this -> success('删除成功',U('lst'));
 	}
 	public function bdel(){
 		$delid = (array)I('post.delid');
 		if($delid){
 			$delid =implode(',',$delid);
-			$model = D('<?php echo $tpName;?>');
+			$model = D('Brand');
 			if (!$model->autoCheckToken($_POST)){
  // 令牌验证错误
 				$this->error('令牌验证错误');
@@ -75,6 +76,6 @@ class <?php echo $tpName;?>Controller extends \Home\Controller\IndexController{
 			$model -> delete($delid);
 			}	
 	$this -> success('批量删除成功',U('lst'));
-	exit;
+	//exit;      success后边没有代码可以不exit
 	}
 }

@@ -51,8 +51,72 @@ class IndexController extends Controller{
 	 		include(APP_PATH.'Gii/Template/save.html');
 	 		$str=ob_get_clean();
 	 		file_put_contents($vdir.'save.html', $str);
-	 		$this->success('操作成功');
-			die;
+
+	 		/*********************************** 向权限表插入相应的权限 ***********************/
+			// 1. 先判断顶级权限现在是否存在 
+			$tpn = I('post.topPriName');
+			$priModel = M('Privilege');
+			$topPri = $priModel->where("pri_level=0 AND pri_name='$tpn'")->find();
+			if($topPri)
+				$topPriId = $topPri['id'];
+			else 
+			{
+				// 如果不存在就插入顶级权限
+				$topPriId = $priModel->add(array(
+					'parent_id' => 0,
+					'pri_name' => $tpn,
+					'module_name' => 'null',
+					'controller_name' => 'null',
+					'action_name' => 'null',
+					'pri_level' => 0,
+				));
+			}
+			// 2. 在顶级权限下面添加二级权限
+			$cnName = I('post.cnName');
+			$subPriId = $priModel->add(array(
+				'parent_id' => $topPriId,
+				'pri_name' => $cnName.'列表',
+				'module_name' => $mn,
+				'controller_name' => $tpName,
+				'action_name' => 'lst',
+				'pri_level' => 1,
+			));
+			// 3. 添加三级权限
+			$priModel->add(array(
+				'parent_id' => $subPriId,
+				'pri_name' => '添加'.$cnName,
+				'module_name' => $mn,
+				'controller_name' => $tpName,
+				'action_name' => 'add',
+				'pri_level' => 2,
+			));
+			$priModel->add(array(
+				'parent_id' => $subPriId,
+				'pri_name' => '修改'.$cnName,
+				'module_name' => $mn,
+				'controller_name' => $tpName,
+				'action_name' => 'save',
+				'pri_level' => 2,
+			));
+			$priModel->add(array(
+				'parent_id' => $subPriId,
+				'pri_name' => '删除'.$cnName,
+				'module_name' => $mn,
+				'controller_name' => $tpName,
+				'action_name' => 'del',
+				'pri_level' => 2,
+			));
+			$priModel->add(array(
+				'parent_id' => $subPriId,
+				'pri_name' => '批量删除'.$cnName,
+				'module_name' => $mn,
+				'controller_name' => $tpName,
+				'action_name' => 'bdel',
+				'pri_level' => 2,
+			));
+			
+			$this->success('操作成功！');
+			exit;
 	 	}
 	 	$this->display();
 	 }

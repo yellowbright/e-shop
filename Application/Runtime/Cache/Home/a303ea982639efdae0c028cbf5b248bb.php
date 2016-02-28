@@ -131,6 +131,15 @@ body {
                     <li class="menu-item"><a href="/index.php/Home/Admin/lst" target="main-frame">管理员列表</a></li>
                 </ul>
             </li>
+             <li class="explode" key="02_cat_and_goods" name="menu">
+            商品模块
+                <ul>
+                    <li class="menu-item"><a href="/index.php/Goods/brand/lst" target="main-frame">品牌列表</a></li>
+                    <li class="menu-item"><a href="/index.php/Home/Role/lst" target="main-frame">商品列表</a></li>
+                    <li class="menu-item"><a href="/index.php/Goods/type/lst" target="main-frame">类型列表</a></li>
+                    <li class="menu-item"><a href="/index.php/Home/Admin/lst" target="main-frame">分类列表</a></li>
+                </ul>
+            </li>
             <li class="explode" key="08_members" name="menu">
             系统模块
                 <ul>
