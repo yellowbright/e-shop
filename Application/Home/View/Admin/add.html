@@ -18,6 +18,17 @@
     <form method="post" action="__SELF__" >
         <table cellspacing="1" cellpadding="3" width="100%">
             <tr>
+                <td class="label">所在角色</td>
+                <td>
+                    <select name="role_id">
+                        <?php foreach ($roleData as $k => $v): ?>
+                        <option value="<?php echo $v['id']; ?>"><?php echo $v['role_name']; ?></option>
+                        <?php endforeach; ?>
+                    </select>
+                    <span class="require-field">*</span>
+                </td>
+            </tr>
+            <tr>
                 <td class="label">账号</td>
                 <td>
                     <input type="text" name="username" maxlength="60" value="" />

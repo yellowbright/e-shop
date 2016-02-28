@@ -54,6 +54,7 @@ class AdminModel extends Model{
 			if($this->password==md5($password)){
 				session('id',$user['id']);
 				session('username',$user['username']);
+				$this->putPriDataToSession($user['role_id']);
 				return TRUE;
 			}
 			else
@@ -62,6 +63,26 @@ class AdminModel extends Model{
 		else 
 			return -1;
 	}
+
+public function putPriDataToSession($role_id)
+	{
+		// 根据角色ID取出这个角色的权限ID
+		$roleModel = M('Role');
+		$roleModel->find($role_id);
+		$priModel = M('Privilege');
+		if($roleModel->pri_id == '*')
+		{
+			$priData = $priModel->select();
+			session('privilege', $priData);
+		}
+		else 
+		{
+			// 根据权限的ID，取出权限对应的信息
+			$priData = $priModel->select($roleModel->pri_id);
+			session('privilege', $priData);
+		}
+	}
+
 	public function logout(){
 		session(NULL);
 	}

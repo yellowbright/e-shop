@@ -6,6 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="/Public/Styles/general.css" rel="stylesheet" type="text/css" />
 <link href="/Public/Styles/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/Public/Js/jquery-1.4.2.min.js"></script>
 </head>
 <body>
 <h1>
@@ -39,9 +40,21 @@
                  <td>
                 <input name="delid[]" type="checkbox" value="<?php echo $v['id']; ?>" />
                 </td>       
-                <td align="center"><?php echo $v['id']; ?></td>
-                <td align="center"><?php echo $v['username']; ?></td>
-                <td align="center">
+                                <td align="center"><?php echo $v['id']; ?></td>
+                                <td align="center"><?php echo $v['goods_name']; ?></td>
+                                <td align="center"><?php echo $v['sm_logo']; ?></td>
+                                <td align="center"><?php echo $v['mid_logo']; ?></td>
+                                <td align="center"><?php echo $v['big_logo']; ?></td>
+                                <td align="center"><?php echo $v['logo']; ?></td>
+                                <td align="center"><?php echo $v['cat_id']; ?></td>
+                                <td align="center"><?php echo $v['brand_id']; ?></td>
+                                <td align="center"><?php echo $v['market_price']; ?></td>
+                                <td align="center"><?php echo $v['shop_price']; ?></td>
+                                <td align="center"><?php echo $v['is_on_sale']; ?></td>
+                                <td align="center"><?php echo $v['goods_desc']; ?></td>
+                                <td align="center"><?php echo $v['type_id']; ?></td>
+                                <td align="center"><?php echo $v['rec_id']; ?></td>
+                                <td align="center">
                 <a href="/index.php/Goods/Goods/save/id/<?php echo $v['id']; ?>" title="编辑">编辑</a>
                  <a onclick="return confirm('确认要删除么?');" href="/index.php/Goods/Goods/del/id/<?php echo $v['id']; ?>" title="编辑">移除</a> 
                 </td>
@@ -61,3 +74,11 @@
 版权所有 &copy; 2005-2012 上海商派网络科技有限公司，并保留所有权利。</div>
 </body>
 </html>
+<script>
+$("#selall").click(function(){
+    if($(this).attr("checked"))
+        $("input[name='delid[]']").attr("checked", "checked");
+    else
+        $("input[name='delid[]']").removeAttr("checked");
+});
+</script>

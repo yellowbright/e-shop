@@ -25,7 +25,7 @@ class LoginController extends Controller{
 	}
 	public function logout(){
 		$model = D('Admin');
-		$model = $model->logout();
+		$model->logout();
 		$this->success('清除登录状态成功,跳转到登录页面',U('login'));
 		exit;
 	}
