@@ -135,9 +135,18 @@ body {
             商品模块
                 <ul>
                     <li class="menu-item"><a href="/index.php/Goods/brand/lst" target="main-frame">品牌列表</a></li>
-                    <li class="menu-item"><a href="/index.php/Home/Role/lst" target="main-frame">商品列表</a></li>
+                    <li class="menu-item"><a href="/index.php/Goods/goods/lst" target="main-frame">商品列表</a></li>
                     <li class="menu-item"><a href="/index.php/Goods/type/lst" target="main-frame">类型列表</a></li>
-                    <li class="menu-item"><a href="/index.php/Home/Admin/lst" target="main-frame">分类列表</a></li>
+                    <li class="menu-item"><a href="/index.php/Goods/Category/lst" target="main-frame">分类列表</a></li>
+                </ul>
+            </li>
+              <li class="explode" key="02_cat_and_goods" name="menu">
+            会员模块
+                <ul>
+                    <li class="menu-item"><a href="/index.php/Member/MemberLevel/lst" target="main-frame">会员级别列表</a></li>
+                    <li class="menu-item"><a href="/index.php/Goods/goods/lst" target="main-frame">商品列表</a></li>
+                    <li class="menu-item"><a href="/index.php/Goods/type/lst" target="main-frame">类型列表</a></li>
+                    <li class="menu-item"><a href="/index.php/Goods/Category/lst" target="main-frame">分类列表</a></li>
                 </ul>
             </li>
             <li class="explode" key="08_members" name="menu">
