@@ -1,0 +1,973 @@
+[ 2016-03-03T09:04:20+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001154s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015143s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015277s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052657s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052771s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.018579s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001083s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.019825s ]
+
+[ 2016-03-03T09:04:22+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000462s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004927s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000299s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000601s ]
+
+[ 2016-03-03T09:04:25+08:00 ] 127.0.0.1 /index.php/Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000536s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000916s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000214s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020724s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020816s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000663s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001230s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001317s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001419s ]
+
+[ 2016-03-03T09:04:26+08:00 ] 127.0.0.1 /index.php/Home/Login/chkImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000602s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000680s ]
+
+[ 2016-03-03T09:04:34+08:00 ] 127.0.0.1 /index.php/Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000537s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000904s ]
+SQL: SHOW COLUMNS FROM `yellow28_admin` [ RunTime:0.052648s ]
+SQL: SELECT * FROM `yellow28_admin` WHERE ( username = 'admin' ) LIMIT 1   [ RunTime:0.000503s ]
+SQL: SHOW COLUMNS FROM `yellow28_role` [ RunTime:0.045062s ]
+SQL: SELECT * FROM `yellow28_role` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000436s ]
+SQL: SHOW COLUMNS FROM `yellow28_privilege` [ RunTime:0.066373s ]
+SQL: SELECT * FROM `yellow28_privilege`  [ RunTime:0.021943s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000190s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009151s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009259s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000571s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001150s ]
+
+[ 2016-03-03T09:04:35+08:00 ] 127.0.0.1 /index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000816s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000919s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014426s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014481s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000213s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000281s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000563s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000454s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-03-03T09:04:36+08:00 ] 127.0.0.1 /index.php/Home/Index/top
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019612s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019717s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000251s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000306s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000637s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000513s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000563s ]
+
+[ 2016-03-03T09:04:36+08:00 ] 127.0.0.1 /index.php/Home/Index/menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000837s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026472s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026557s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000397s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000835s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000668s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000736s ]
+
+[ 2016-03-03T09:04:36+08:00 ] 127.0.0.1 /index.php/Home/Index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000711s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000785s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040091s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000408s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000831s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000528s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000578s ]
+
+[ 2016-03-03T09:04:36+08:00 ] 127.0.0.1 /index.php/Home/Index/Js/global.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000602s ]
+ERR: 非法操作:Js
+
+[ 2016-03-03T09:04:36+08:00 ] 127.0.0.1 /index.php/Home/Index/Js/transport.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000539s ]
+ERR: 非法操作:Js
+
+[ 2016-03-03T09:04:36+08:00 ] 127.0.0.1 /index.php/Home/Index/Js/utils.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000604s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000663s ]
+ERR: 非法操作:Js
+
+[ 2016-03-03T11:33:11+08:00 ] 127.0.0.1 /index.php/Member/MemberLevel/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000672s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000853s ]
+SQL: SHOW COLUMNS FROM `yellow28_member_level` [ RunTime:0.003791s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\Users\yellow\e-shop\ThinkPHP\Library\Think\Db.class.php 第 429 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `yellow28_member_level` LIMIT 1   [ RunTime:0.000202s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\Users\yellow\e-shop\ThinkPHP\Library\Think\Db.class.php 第 429 行.
+SQL: SELECT * FROM `yellow28_member_level` LIMIT 0,25   [ RunTime:0.000335s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000215s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052455s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052629s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000927s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002172s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001310s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001405s ]
+
+[ 2016-03-03T11:33:17+08:00 ] 127.0.0.1 /index.php/Goods/goods/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000623s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001379s ]
+SQL: SHOW COLUMNS FROM `yellow28_goods` [ RunTime:0.005700s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\Users\yellow\e-shop\ThinkPHP\Library\Think\Db.class.php 第 429 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `yellow28_goods` LIMIT 1   [ RunTime:0.000254s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\Users\yellow\e-shop\ThinkPHP\Library\Think\Db.class.php 第 429 行.
+SQL: SELECT * FROM `yellow28_goods` LIMIT 0,25   [ RunTime:0.000497s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021308s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021385s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000548s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001088s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000848s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000905s ]
+
+[ 2016-03-03T11:33:21+08:00 ] 127.0.0.1 /index.php/Goods/type/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000702s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000756s ]
+SQL: SHOW COLUMNS FROM `yellow28_type` [ RunTime:0.004718s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\Users\yellow\e-shop\ThinkPHP\Library\Think\Db.class.php 第 429 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `yellow28_type` LIMIT 1   [ RunTime:0.000386s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\Users\yellow\e-shop\ThinkPHP\Library\Think\Db.class.php 第 429 行.
+SQL: SELECT * FROM `yellow28_type` LIMIT 0,25   [ RunTime:0.000304s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000213s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022047s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022226s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000843s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001208s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002202s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001313s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001409s ]
+
+[ 2016-03-03T11:33:23+08:00 ] 127.0.0.1 /index.php/Goods/Category/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000648s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001196s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001295s ]
+SQL: SHOW COLUMNS FROM `yellow28_category` [ RunTime:0.005685s ]
+SQL: SELECT * FROM `yellow28_category`  [ RunTime:0.000469s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000230s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017646s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017846s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000819s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001120s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002124s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001494s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001715s ]
+
+[ 2016-03-03T11:33:27+08:00 ] 127.0.0.1 /index.php/Goods/goods/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000699s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000964s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001039s ]
+SQL: SHOW COLUMNS FROM `yellow28_goods` [ RunTime:0.002784s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\Users\yellow\e-shop\ThinkPHP\Library\Think\Db.class.php 第 429 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `yellow28_goods` LIMIT 1   [ RunTime:0.000177s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\Users\yellow\e-shop\ThinkPHP\Library\Think\Db.class.php 第 429 行.
+SQL: SELECT * FROM `yellow28_goods` LIMIT 0,25   [ RunTime:0.000266s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006521s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006579s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000609s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001120s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000749s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000796s ]
+
+[ 2016-03-03T11:34:10+08:00 ] 127.0.0.1 /index.php/Goods/goods/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000616s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001477s ]
+SQL: SHOW COLUMNS FROM `yellow28_goods` [ RunTime:0.002726s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\Users\yellow\e-shop\ThinkPHP\Library\Think\Db.class.php 第 429 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `yellow28_goods` LIMIT 1   [ RunTime:0.000156s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\Users\yellow\e-shop\ThinkPHP\Library\Think\Db.class.php 第 429 行.
+SQL: SELECT * FROM `yellow28_goods` LIMIT 0,25   [ RunTime:0.000234s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005924s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005979s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000537s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000780s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000831s ]
+
+[ 2016-03-03T11:34:17+08:00 ] 127.0.0.1 /index.php/Goods/Goods/save/id/6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000765s ]
+SQL: SHOW COLUMNS FROM `yellow28_goods` [ RunTime:0.002804s ]
+SQL: SHOW COLUMNS FROM `yellow28_type` [ RunTime:0.002520s ]
+SQL: SELECT * FROM `yellow28_type`  [ RunTime:0.000217s ]
+SQL: SHOW COLUMNS FROM `yellow28_brand` [ RunTime:0.004268s ]
+SQL: SELECT * FROM `yellow28_brand`  [ RunTime:0.000320s ]
+SQL: SHOW COLUMNS FROM `yellow28_category` [ RunTime:0.003682s ]
+SQL: SELECT * FROM `yellow28_category`  [ RunTime:0.000337s ]
+SQL: SHOW COLUMNS FROM `yellow28_member_level` [ RunTime:0.003825s ]
+SQL: SELECT * FROM `yellow28_member_level`  [ RunTime:0.000282s ]
+SQL: SELECT * FROM `yellow28_goods` WHERE ( `id` = 6 ) LIMIT 1   [ RunTime:0.000364s ]
+SQL: SELECT a.*,b.attr_name,b.attr_type,b.attr_option_value
+ FROM php28_goods_attr a
+  LEFT JOIN php28_attribute b ON a.attr_id=b.id
+   WHERE a.goods_id=6 [ RunTime:0.000555s ]
+ERR: 1146:Table 'yellow28.php28_goods_attr' doesn't exist
+ [ SQL语句 ] : SELECT a.*,b.attr_name,b.attr_type,b.attr_option_value
+ FROM php28_goods_attr a
+  LEFT JOIN php28_attribute b ON a.attr_id=b.id
+   WHERE a.goods_id=6
+SQL: SHOW COLUMNS FROM `yellow28_member_price` [ RunTime:0.003487s ]
+SQL: SELECT * FROM `yellow28_member_price` WHERE ( goods_id=6 )  [ RunTime:0.000190s ]
+SQL: SHOW COLUMNS FROM `yellow28_goods_pic` [ RunTime:0.003966s ]
+SQL: SELECT * FROM `yellow28_goods_pic` WHERE ( goods_id=6 )  [ RunTime:0.000306s ]
+SQL: SHOW COLUMNS FROM `yellow28_recommend` [ RunTime:0.004302s ]
+SQL: SELECT * FROM `yellow28_recommend` WHERE ( rec_type="商品" )  [ RunTime:0.000248s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\Users\yellow\e-shop\Application\Runtime\Cache\Goods\8883ea0439a571f80c68276495f629c6.php 第 119 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\Users\yellow\e-shop\Application\Runtime\Cache\Goods\8883ea0439a571f80c68276495f629c6.php 第 119 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\Users\yellow\e-shop\Application\Runtime\Cache\Goods\8883ea0439a571f80c68276495f629c6.php 第 119 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\Users\yellow\e-shop\Application\Runtime\Cache\Goods\8883ea0439a571f80c68276495f629c6.php 第 143 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\Users\yellow\e-shop\Application\Runtime\Cache\Goods\8883ea0439a571f80c68276495f629c6.php 第 186 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038038s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038097s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000532s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001069s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000739s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000790s ]
+
+[ 2016-03-03T11:34:31+08:00 ] 127.0.0.1 /index.php/Goods/brand/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000739s ]
+SQL: SHOW COLUMNS FROM `yellow28_brand` [ RunTime:0.002552s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\Users\yellow\e-shop\ThinkPHP\Library\Think\Db.class.php 第 429 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `yellow28_brand` LIMIT 1   [ RunTime:0.000146s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\Users\yellow\e-shop\ThinkPHP\Library\Think\Db.class.php 第 429 行.
+SQL: SELECT * FROM `yellow28_brand` LIMIT 0,4   [ RunTime:0.000358s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000204s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027044s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027209s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000551s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001223s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000702s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000753s ]
+
+[ 2016-03-03T11:34:34+08:00 ] 127.0.0.1 /index.php/Goods/goods/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000664s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001445s ]
+SQL: SHOW COLUMNS FROM `yellow28_goods` [ RunTime:0.002886s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\Users\yellow\e-shop\ThinkPHP\Library\Think\Db.class.php 第 429 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `yellow28_goods` LIMIT 1   [ RunTime:0.000135s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\Users\yellow\e-shop\ThinkPHP\Library\Think\Db.class.php 第 429 行.
+SQL: SELECT * FROM `yellow28_goods` LIMIT 0,25   [ RunTime:0.000211s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006383s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006441s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000428s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000526s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001029s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000747s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000797s ]
+
+[ 2016-03-03T11:34:35+08:00 ] 127.0.0.1 /index.php/Goods/Goods/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000627s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001395s ]
+SQL: SHOW COLUMNS FROM `yellow28_type` [ RunTime:0.002543s ]
+SQL: SELECT * FROM `yellow28_type`  [ RunTime:0.000204s ]
+SQL: SHOW COLUMNS FROM `yellow28_brand` [ RunTime:0.002530s ]
+SQL: SELECT * FROM `yellow28_brand`  [ RunTime:0.000166s ]
+SQL: SHOW COLUMNS FROM `yellow28_category` [ RunTime:0.002396s ]
+SQL: SELECT * FROM `yellow28_category`  [ RunTime:0.000234s ]
+SQL: SHOW COLUMNS FROM `yellow28_member_level` [ RunTime:0.002238s ]
+SQL: SELECT * FROM `yellow28_member_level`  [ RunTime:0.000214s ]
+SQL: SHOW COLUMNS FROM `yellow28_recommend` [ RunTime:0.002459s ]
+SQL: SELECT * FROM `yellow28_recommend` WHERE ( rec_type="商品" )  [ RunTime:0.000201s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000193s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000321s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044693s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044790s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000935s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001016s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002100s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001970s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002081s ]
+
+[ 2016-03-03T11:35:20+08:00 ] 127.0.0.1 /index.php/Goods/Goods/ajaxGetAttr/tid/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000673s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000719s ]
+SQL: SHOW COLUMNS FROM `yellow28_attribute` [ RunTime:0.002849s ]
+SQL: SELECT * FROM `yellow28_attribute` WHERE ( type_id=2 )  [ RunTime:0.034854s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000791s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000839s ]
+
+[ 2016-03-03T11:35:29+08:00 ] 127.0.0.1 /index.php/Goods/Goods/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000736s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001440s ]
+SQL: SHOW COLUMNS FROM `yellow28_goods` [ RunTime:0.002991s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\Users\yellow\e-shop\ThinkPHP\Library\Think\Upload.class.php 第 167 行.
+SQL: INSERT INTO `yellow28_goods` (`goods_name`,`cat_id`,`brand_id`,`market_price`,`shop_price`,`is_on_sale`,`rec_id`,`goods_desc`,`type_id`,`logo`,`big_logo`,`mid_logo`,`sm_logo`) VALUES ('杭州',1,11,'4556','4564','1','1,5','<p>1231231</p>',2,'Goods/2016-03-03/56d7b1017209e.jpg','Goods/2016-03-03/big_56d7b1017209e.jpg','Goods/2016-03-03/mid_56d7b1017209e.jpg','Goods/2016-03-03/sm_56d7b1017209e.jpg') [ RunTime:0.028356s ]
+SQL: SHOW COLUMNS FROM `yellow28_member_price` [ RunTime:0.004790s ]
+SQL: INSERT INTO `yellow28_member_price` (`price`,`level_id`,`goods_id`) VALUES ('12',1,7) [ RunTime:0.000321s ]
+SQL: INSERT INTO `yellow28_member_price` (`price`,`level_id`,`goods_id`) VALUES ('123',2,7) [ RunTime:0.000217s ]
+SQL: INSERT INTO `yellow28_member_price` (`price`,`level_id`,`goods_id`) VALUES ('12',3,7) [ RunTime:0.000199s ]
+SQL: SHOW COLUMNS FROM `yellow28_goods_attr` [ RunTime:0.005659s ]
+SQL: INSERT INTO `yellow28_goods_attr` (`goods_id`,`attr_id`,`attr_value`,`attr_price`) VALUES (7,3,'乔丹','123') [ RunTime:0.000396s ]
+SQL: INSERT INTO `yellow28_goods_attr` (`goods_id`,`attr_id`,`attr_value`,`attr_price`) VALUES (7,4,'匹克','123') [ RunTime:0.000308s ]
+NOTIC: [2] finfo_file(): Empty filename or path F:\Users\yellow\e-shop\ThinkPHP\Library\Think\Upload.class.php 第 149 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015617s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015690s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000521s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001061s ]
+
+[ 2016-03-03T11:35:30+08:00 ] 127.0.0.1 /index.php/Goods/Goods/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000715s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001479s ]
+SQL: SHOW COLUMNS FROM `yellow28_goods` [ RunTime:0.002748s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\Users\yellow\e-shop\ThinkPHP\Library\Think\Db.class.php 第 429 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `yellow28_goods` LIMIT 1   [ RunTime:0.000155s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\Users\yellow\e-shop\ThinkPHP\Library\Think\Db.class.php 第 429 行.
+SQL: SELECT * FROM `yellow28_goods` LIMIT 0,25   [ RunTime:0.000301s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006347s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006413s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000530s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001011s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000668s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000714s ]
+
+[ 2016-03-03T11:36:31+08:00 ] 127.0.0.1 /index.php/Goods/Goods/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000709s ]
+SQL: SHOW COLUMNS FROM `yellow28_type` [ RunTime:0.012324s ]
+SQL: SELECT * FROM `yellow28_type`  [ RunTime:0.000201s ]
+SQL: SHOW COLUMNS FROM `yellow28_brand` [ RunTime:0.002444s ]
+SQL: SELECT * FROM `yellow28_brand`  [ RunTime:0.000183s ]
+SQL: SHOW COLUMNS FROM `yellow28_category` [ RunTime:0.002490s ]
+SQL: SELECT * FROM `yellow28_category`  [ RunTime:0.000202s ]
+SQL: SHOW COLUMNS FROM `yellow28_member_level` [ RunTime:0.002321s ]
+SQL: SELECT * FROM `yellow28_member_level`  [ RunTime:0.000175s ]
+SQL: SHOW COLUMNS FROM `yellow28_recommend` [ RunTime:0.002317s ]
+SQL: SELECT * FROM `yellow28_recommend` WHERE ( rec_type="商品" )  [ RunTime:0.000209s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007929s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007988s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000387s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000465s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000931s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000650s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000708s ]
+
+[ 2016-03-03T11:36:51+08:00 ] 127.0.0.1 /index.php/Goods/Goods/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000623s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001092s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001203s ]
+SQL: SHOW COLUMNS FROM `yellow28_goods` [ RunTime:0.002821s ]
+SQL: INSERT INTO `yellow28_goods` (`goods_name`,`cat_id`,`brand_id`,`market_price`,`shop_price`,`is_on_sale`,`rec_id`,`goods_desc`,`type_id`) VALUES ('翠苑',1,11,'123','12','1','1','<p>12</p>',0) [ RunTime:0.000263s ]
+SQL: SHOW COLUMNS FROM `yellow28_member_price` [ RunTime:0.002370s ]
+SQL: SHOW COLUMNS FROM `yellow28_goods_attr` [ RunTime:0.002362s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\Users\yellow\e-shop\Application\Goods\Model\GoodsModel.class.php 第 100 行.
+NOTIC: [2] finfo_file(): Empty filename or path F:\Users\yellow\e-shop\ThinkPHP\Library\Think\Upload.class.php 第 149 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006039s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006100s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000457s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000890s ]
+
+[ 2016-03-03T11:36:53+08:00 ] 127.0.0.1 /index.php/Goods/Goods/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000610s ]
+SQL: SHOW COLUMNS FROM `yellow28_goods` [ RunTime:0.003106s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\Users\yellow\e-shop\ThinkPHP\Library\Think\Db.class.php 第 429 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `yellow28_goods` LIMIT 1   [ RunTime:0.000160s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\Users\yellow\e-shop\ThinkPHP\Library\Think\Db.class.php 第 429 行.
+SQL: SELECT * FROM `yellow28_goods` LIMIT 0,25   [ RunTime:0.000256s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006578s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006636s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000449s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000874s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000560s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000614s ]
+
+[ 2016-03-03T15:12:59+08:00 ] 127.0.0.1 /index.php/Gii/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000707s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001600s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000278s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030504s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030646s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000756s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000865s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001770s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001139s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001234s ]
+
+[ 2016-03-03T15:13:17+08:00 ] 127.0.0.1 /index.php/Gii/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000604s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000708s ]
+SQL: SHOW FULL FIELDS FROM text1 [ RunTime:0.047562s ]
+ERR: 1146:Table 'yellow28.text1' doesn't exist
+ [ SQL语句 ] : SHOW FULL FIELDS FROM text1
+
+[ 2016-03-03T15:13:38+08:00 ] 127.0.0.1 /index.php/Gii/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000679s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001099s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001204s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006314s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006372s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000411s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000404s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000909s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000581s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000631s ]
+
+[ 2016-03-03T15:19:08+08:00 ] 127.0.0.1 /index.php/Gii/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000745s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001629s ]
+SQL: SHOW FULL FIELDS FROM yellow28_text [ RunTime:0.004129s ]
+
+[ 2016-03-03T15:48:41+08:00 ] 127.0.0.1 /index.php/Gii/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000824s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000882s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006790s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006852s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000545s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001177s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000777s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000847s ]
+
+[ 2016-03-03T16:00:20+08:00 ] 127.0.0.1 /index.php/Home/Privilege/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000640s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001471s ]
+SQL: SHOW COLUMNS FROM `yellow28_privilege` [ RunTime:0.035420s ]
+SQL: SELECT * FROM `yellow28_privilege`  [ RunTime:0.029624s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000254s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.091327s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.091474s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000924s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002195s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001311s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001409s ]
+
+[ 2016-03-03T16:00:22+08:00 ] 127.0.0.1 /index.php/Home/Privilege/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000740s ]
+SQL: SHOW COLUMNS FROM `yellow28_privilege` [ RunTime:0.002649s ]
+SQL: SELECT * FROM `yellow28_privilege`  [ RunTime:0.000365s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032054s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032129s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000576s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000565s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001240s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000865s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000979s ]
+
+[ 2016-03-03T16:30:46+08:00 ] 127.0.0.1 /index.php/Goods/goods/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000644s ]
+SQL: SHOW COLUMNS FROM `yellow28_goods` [ RunTime:0.050249s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\Users\yellow\e-shop\ThinkPHP\Library\Think\Db.class.php 第 429 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `yellow28_goods` LIMIT 1   [ RunTime:0.028527s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\Users\yellow\e-shop\ThinkPHP\Library\Think\Db.class.php 第 429 行.
+SQL: SELECT * FROM `yellow28_goods` LIMIT 0,25   [ RunTime:0.016035s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000221s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041430s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041580s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000759s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001032s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001950s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001227s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001321s ]
+
+[ 2016-03-03T16:30:48+08:00 ] 127.0.0.1 /index.php/Goods/Goods/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000708s ]
+SQL: SHOW COLUMNS FROM `yellow28_type` [ RunTime:0.002887s ]
+SQL: SELECT * FROM `yellow28_type`  [ RunTime:0.046016s ]
+SQL: SHOW COLUMNS FROM `yellow28_brand` [ RunTime:0.005714s ]
+SQL: SELECT * FROM `yellow28_brand`  [ RunTime:0.000390s ]
+SQL: SHOW COLUMNS FROM `yellow28_category` [ RunTime:0.024143s ]
+SQL: SELECT * FROM `yellow28_category`  [ RunTime:0.000509s ]
+SQL: SHOW COLUMNS FROM `yellow28_member_level` [ RunTime:0.006106s ]
+SQL: SELECT * FROM `yellow28_member_level`  [ RunTime:0.000374s ]
+SQL: SHOW COLUMNS FROM `yellow28_recommend` [ RunTime:0.005305s ]
+SQL: SELECT * FROM `yellow28_recommend` WHERE ( rec_type="商品" )  [ RunTime:0.000402s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000233s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034743s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034852s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000621s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000725s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001469s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001540s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001821s ]
+
+[ 2016-03-03T16:31:00+08:00 ] 127.0.0.1 /index.php/Goods/Goods/ajaxGetAttr/tid/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000604s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000653s ]
+SQL: SHOW COLUMNS FROM `yellow28_attribute` [ RunTime:0.002774s ]
+SQL: SELECT * FROM `yellow28_attribute` WHERE ( type_id=1 )  [ RunTime:0.268031s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001346s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001443s ]
+
+[ 2016-03-03T16:41:36+08:00 ] 127.0.0.1 /index.php/Goods/Goods/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000833s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001029s ]
+
+[ 2016-03-03T16:48:22+08:00 ] 127.0.0.1 /index.php/Goods/Goods/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000636s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001451s ]
+SQL: SHOW COLUMNS FROM `yellow28_type` [ RunTime:0.002597s ]
+SQL: SELECT * FROM `yellow28_type`  [ RunTime:0.000214s ]
+SQL: SHOW COLUMNS FROM `yellow28_brand` [ RunTime:0.002974s ]
+SQL: SELECT * FROM `yellow28_brand`  [ RunTime:0.000221s ]
+SQL: SHOW COLUMNS FROM `yellow28_category` [ RunTime:0.003111s ]
+SQL: SELECT * FROM `yellow28_category`  [ RunTime:0.000193s ]
+SQL: SHOW COLUMNS FROM `yellow28_member_level` [ RunTime:0.002673s ]
+SQL: SELECT * FROM `yellow28_member_level`  [ RunTime:0.000179s ]
+SQL: SHOW COLUMNS FROM `yellow28_recommend` [ RunTime:0.002590s ]
+SQL: SELECT * FROM `yellow28_recommend` WHERE ( rec_type="商品" )  [ RunTime:0.000220s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008339s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008409s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000572s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001169s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000753s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000813s ]
+
+[ 2016-03-03T16:48:24+08:00 ] 127.0.0.1 /index.php/Goods/brand/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000702s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000758s ]
+SQL: SHOW COLUMNS FROM `yellow28_brand` [ RunTime:0.002543s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\Users\yellow\e-shop\ThinkPHP\Library\Think\Db.class.php 第 429 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `yellow28_brand` LIMIT 1   [ RunTime:0.000152s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\Users\yellow\e-shop\ThinkPHP\Library\Think\Db.class.php 第 429 行.
+SQL: SELECT * FROM `yellow28_brand` LIMIT 0,4   [ RunTime:0.000155s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019678s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019872s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000932s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001117s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002198s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001636s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001741s ]
+
+[ 2016-03-03T16:48:25+08:00 ] 127.0.0.1 /index.php/Goods/Brand/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000764s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025201s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025264s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000548s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000728s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000803s ]
+
+[ 2016-03-03T16:48:32+08:00 ] 127.0.0.1 /index.php/Goods/Brand/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000705s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000761s ]
+SQL: SHOW COLUMNS FROM `yellow28_brand` [ RunTime:0.002803s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.220040s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.220147s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001057s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001028s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002236s ]
+
+[ 2016-03-03T16:48:35+08:00 ] 127.0.0.1 /index.php/Goods/Brand/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000617s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001443s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008080s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008159s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000539s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001104s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000698s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000750s ]
+
+[ 2016-03-03T16:48:38+08:00 ] 127.0.0.1 /index.php/Goods/Brand/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000715s ]
+SQL: SHOW COLUMNS FROM `yellow28_brand` [ RunTime:0.002435s ]
+

@@ -1,7 +1,7 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>ECSHOP 管理中心 - 商品 </title>
+<title>ECSHOP 管理中心 - 列表 </title>
 <meta name="robots" content="noindex, nofollow">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="/Public/Styles/general.css" rel="stylesheet" type="text/css" />
@@ -15,58 +15,41 @@
     <span id="search_id" class="action-span1"> - 列表 </span>
     <div style="clear:both"></div>
 </h1>
-<form method="post" action="/index.php/Goods/Goods/bdel" onclick="return confilm('确认要删除么?');" name="listForm">
+<form method="post" action="/index.php/Goods/Goods/bdel" onsubmit="return confirm('确定要删除吗？');" name="listForm">
     <div class="list-div" id="listDiv">
         <table cellpadding="3" cellspacing="1">
             <tr>
-                <th width="30"><input id="selall" type="checkbox" /></th>
-                                <th>id</th>
-                            <th>商品名称</th>
-                            <th>小图</th>
-                            <th>中图</th>
-                            <th>大图</th>
-                            <th>原图</th>
-                            <th>分类ID</th>
-                            <th>品牌ID</th>
-                            <th>市场价</th>
-                            <th>本店价</th>
-                            <th>是否上架</th>
-                            <th>商品描述</th>
-                            <th>商品类型id</th>
-                            <th>推荐位的ID，多个用，隔开</th>
-                            <th>操作</th>
+            	<th width="30"><input id="selall" type="checkbox" /></th>
+            	                <th>id</th>
+                                <th>商品名称</th>
+                                <th>市场价</th>
+                                <th>本场价</th>
+                                <th>是否上架</th>
+                                <th>操作</th>
             </tr>
-           <?php foreach($data as $k => $v): ?>          <tr class="ontr">
-                 <td>
-                <input name="delid[]" type="checkbox" value="<?php echo $v['id']; ?>" />
-                </td>       
-                                <td align="center"><?php echo $v['id']; ?></td>
+            <?php foreach ($data as $k => $v): ?>            
+            <tr class="ontr">
+            	<td>
+            		<input name="delid[]" type="checkbox" value="<?php echo $v['id']; ?>" />
+            	</td>
+            	                <td align="center"><?php echo $v['id']; ?></td>
                                 <td align="center"><?php echo $v['goods_name']; ?></td>
-                                <td align="center"><?php echo $v['sm_logo']; ?></td>
-                                <td align="center"><?php echo $v['mid_logo']; ?></td>
-                                <td align="center"><?php echo $v['big_logo']; ?></td>
-                                <td align="center"><?php echo $v['logo']; ?></td>
-                                <td align="center"><?php echo $v['cat_id']; ?></td>
-                                <td align="center"><?php echo $v['brand_id']; ?></td>
                                 <td align="center"><?php echo $v['market_price']; ?></td>
                                 <td align="center"><?php echo $v['shop_price']; ?></td>
                                 <td align="center"><?php echo $v['is_on_sale']; ?></td>
-                                <td align="center"><?php echo $v['goods_desc']; ?></td>
-                                <td align="center"><?php echo $v['type_id']; ?></td>
-                                <td align="center"><?php echo $v['rec_id']; ?></td>
                                 <td align="center">
+                <a href="/index.php/Goods/Goods/goodsnumber/id/<?php echo $v['id']; ?>" title="库存">库存</a>
                 <a href="/index.php/Goods/Goods/save/id/<?php echo $v['id']; ?>" title="编辑">编辑</a>
-                 <a onclick="return confirm('确认要删除么?');" href="/index.php/Goods/Goods/del/id/<?php echo $v['id']; ?>" title="编辑">移除</a> 
+                <a onclick="return confirm('确定要删除吗？');" href="/index.php/Goods/Goods/del/id/<?php echo $v['id']; ?>" title="移除">移除</a> 
                 </td>
             </tr>
             <?php endforeach; ?>            <tr>
-                <td><input type="submit" value="删除所选" /></td>
-                <td align="right" nowrap="true" colspan="15">
-                <?php echo $page;?>                </td>
-            </tr> 
+            	<td><input type="submit" value="删除所选" /></td>
+                <td align="right" nowrap="true" colspan="6">
+                <?php echo $page; ?>                </td>
+            </tr>
         </table>
     </div>
-    {__TOKEN__}
 </form>
 
 <div id="footer">
@@ -76,9 +59,17 @@
 </html>
 <script>
 $("#selall").click(function(){
-    if($(this).attr("checked"))
-        $("input[name='delid[]']").attr("checked", "checked");
-    else
-        $("input[name='delid[]']").removeAttr("checked");
+	if($(this).attr("checked"))
+		$("input[name='delid[]']").attr("checked", "checked");
+	else
+		$("input[name='delid[]']").removeAttr("checked");
+});
+
+$(".ontr").mouseover(function(){
+	$(this).addClass("tron");
+});
+
+$(".ontr").mouseout(function(){
+	$(this).removeClass("tron");
 });
 </script>

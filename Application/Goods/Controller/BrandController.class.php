@@ -16,7 +16,7 @@ class BrandController extends \Home\Controller\IndexController{
 		$this -> display();
 	}
 	public function add(){
-		if(IS_POST){
+		if(IS_POST){		
 			$model=D('Brand');
 			if($model->create()){
 				if($model->add()){
